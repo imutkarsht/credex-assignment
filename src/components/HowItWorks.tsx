@@ -36,13 +36,13 @@ const cardVariants = {
 };
 
 const HowItWorks = () => (
-  <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-20 lg:py-28">
+  <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-16 sm:py-20 lg:py-28">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
           Simple 3-Step Process
         </h2>
-        <p className="mt-4 text-lg text-gray-600 sm:text-xl">
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
           Turn your unused software licenses into cash—quickly, securely, and hassle-free.
         </p>
       </div>
@@ -57,14 +57,14 @@ const HowItWorks = () => (
         {steps.map((step, idx) => (
           <motion.div
             key={idx}
-            className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-100"
+            className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-blue-100 dark:border-gray-700"
             variants={cardVariants}
           >
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white mb-4">
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-500 dark:to-cyan-500 text-white mb-4">
               <step.icon className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
-            <p className="text-gray-600">{step.desc}</p>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{step.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300">{step.desc}</p>
           </motion.div>
         ))}
       </motion.div>

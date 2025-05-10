@@ -1,5 +1,5 @@
 export const Footer = () => (
-   <footer className="bg-gradient-to-b from-blue-200 to-white text-gray-800">
+   <footer className="bg-gradient-to-b from-blue-200 to-white dark:from-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
             {/* Logo & Tagline */}
@@ -12,7 +12,7 @@ export const Footer = () => (
                         viewBox="0 0 100 100"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="text-blue-600"
+                        className="text-blue-600 dark:text-blue-400"
                      >
                         <circle
                            cx="50"
@@ -28,12 +28,12 @@ export const Footer = () => (
                            fill="none"
                         />
                      </svg>
-                     <span className="text-xl font-bold text-blue-900 tracking-tight">
+                     <span className="text-xl font-bold text-blue-900 dark:text-blue-100 tracking-tight">
                         SoftSell
                      </span>
                   </a>
                </div>
-               <p className="text-gray-700 text-sm leading-relaxed mt-2">
+               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mt-2">
                   SoftSell™ streamlines enterprise software resale and license
                   management with speed, trust, and compliance.
                </p>
@@ -41,14 +41,14 @@ export const Footer = () => (
 
             {/* Navigation Links */}
             <div className="space-y-2">
-               <h3 className="text-sm font-semibold text-gray-800 tracking-wider uppercase">
+               <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200 tracking-wider uppercase">
                   Quick Links
                </h3>
                <ul className="space-y-1 mt-3">
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         About Us
                      </a>
@@ -56,7 +56,7 @@ export const Footer = () => (
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         Sell Licenses
                      </a>
@@ -64,7 +64,7 @@ export const Footer = () => (
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         Support
                      </a>
@@ -72,7 +72,7 @@ export const Footer = () => (
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         FAQs
                      </a>
@@ -82,14 +82,14 @@ export const Footer = () => (
 
             {/* Legal + Social */}
             <div className="space-y-2">
-               <h3 className="text-sm font-semibold text-gray-800 tracking-wider uppercase">
+               <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200 tracking-wider uppercase">
                   Legal
                </h3>
                <ul className="space-y-1 mt-3">
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         Privacy Policy
                      </a>
@@ -97,7 +97,7 @@ export const Footer = () => (
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         Terms & Conditions
                      </a>
@@ -105,7 +105,7 @@ export const Footer = () => (
                   <li>
                      <a
                         href="#"
-                        className="text-gray-700 hover:text-blue-700 transition"
+                        className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition"
                      >
                         Contact Us
                      </a>
@@ -114,7 +114,7 @@ export const Footer = () => (
             </div>
          </div>
 
-         <div className="mt-12 border-t border-gray-300 pt-6 text-sm text-center text-gray-600">
+         <div className="mt-12 border-t border-gray-300 dark:border-gray-700 pt-6 text-sm text-center text-gray-600 dark:text-gray-400">
             © {new Date().getFullYear()} SoftSell™. All rights reserved.
          </div>
       </div>

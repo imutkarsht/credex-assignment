@@ -37,13 +37,13 @@ const fadeUp = {
 };
 
 const Testimonials = () => (
-  <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-20 lg:py-24">
+  <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-16 sm:py-20 lg:py-24">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
           What Our Clients Say
         </h2>
-        <p className="mt-4 text-gray-600 text-lg max-w-xl mx-auto">
+        <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg max-w-xl mx-auto">
           Hear from real businesses that used SoftSell to optimize their software assets.
         </p>
       </div>
@@ -57,7 +57,7 @@ const Testimonials = () => (
             whileInView="visible"
             viewport={{ once: true }}
             custom={idx}
-            className="bg-white border border-blue-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition duration-300"
+            className="bg-white dark:bg-gray-800 border border-blue-100 dark:border-gray-700 shadow-sm rounded-2xl p-6 hover:shadow-md transition duration-300"
           >
             <div className="flex items-center gap-4">
               <Image
@@ -68,14 +68,14 @@ const Testimonials = () => (
                 className="w-14 h-14 rounded-full object-cover"
               />
               <div>
-                <p className="font-semibold text-gray-900">{t.name}</p>
-                <p className="text-sm text-gray-600">
+                <p className="font-semibold text-gray-900 dark:text-white">{t.name}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
                   {t.role} · {t.company}
                 </p>
               </div>
             </div>
-            <p className="mt-6 text-gray-700 text-sm leading-relaxed">
-              “{t.text}”
+            <p className="mt-6 text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              &quot;{t.text}&quot;
             </p>
           </motion.div>
         ))}

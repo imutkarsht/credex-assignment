@@ -36,13 +36,13 @@ const fadeInUp = {
 };
 
 const WhyChooseUs = () => (
-  <section className="py-16 sm:py-20 lg:py-24 bg-white">
+  <section className="py-16 sm:py-20 lg:py-24 bg-white dark:bg-gray-900">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-          Why Choose <span className="text-blue-600">SoftSell</span>
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+          Why Choose <span className="text-blue-600 dark:text-blue-400">SoftSell</span>
         </h2>
-        <p className="mt-4 text-lg text-gray-600 sm:text-xl">
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
           Secure. Fast. Reliable. Everything you need in one marketplace.
         </p>
       </div>
@@ -51,20 +51,20 @@ const WhyChooseUs = () => (
         {features.map((item, idx) => (
           <motion.div
             key={idx}
-            className="p-6 text-center bg-white border border-blue-100 shadow-sm rounded-2xl hover:shadow-lg transition-shadow duration-300"
+            className="p-6 text-center bg-white dark:bg-gray-800 border border-blue-100 dark:border-gray-700 shadow-sm rounded-2xl hover:shadow-lg transition-shadow duration-300"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             custom={idx}
           >
-            <div className="flex items-center justify-center w-14 h-14 mx-auto text-white bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full">
+            <div className="flex items-center justify-center w-14 h-14 mx-auto text-white bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-500 dark:to-cyan-500 rounded-full">
               <item.icon className="w-6 h-6" />
             </div>
-            <h3 className="mt-6 text-xl font-semibold text-gray-900">
+            <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
               {item.title}
             </h3>
-            <p className="mt-2 text-gray-600">{item.desc}</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">{item.desc}</p>
           </motion.div>
         ))}
       </div>
